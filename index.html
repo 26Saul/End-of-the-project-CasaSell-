@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CasaSell</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Casas en Gran Canarias</div>
+      <ul class="nav-links">
+        <li><a href="#">Inicio </a> </li>
+        <li><a href="#house">Propiedades </a> </li>
+        <li><a href="#contacts">Contactos </a> </li>
+        <li><a href="/management.html">Nuevas Casas </a> </li>
+        <li><a href="/contacts.html">Ver contactos </a> </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <h1>Encuentra el hogar deseado</h1>
+      <p>Las mejores propiedades de Gran Canarias</p>
+      <button class="cta-button">Ver Propiedades</button>
+
+    </section>
+
+    <section id="house">
+      <h2>Propiedades Destacadas</h2>
+
+      <div class="house-grid">
+
+        <article class="house-card">
+          <button class="img-btn" aria-label="Abrir imagen 1">
+            <img src="/img/house1.jpeg" alt="Villa Moderna">
+          </button>
+          <h3>Villa Moderna</h3>
+          <p class="price">540.000€</p>
+          <p class="description">Villa moderna a 400m de las Dunas de Maspalomas, con piscina y jardín
+            privado.</p>
+        </article>
+
+        <article class="house-card">
+          <button class="img-btn" aria-label="Abrir imagen 2">
+            <img src="img/house2.jpeg" alt="Villa Reformada">
+          </button>
+          <h3>Villa Reformada</h3>
+          <p class="price">354.900€</p>
+          <p class="description">Increíble villa reformada en San Mateo.</p>
+        </article>
+
+        <article class="house-card">
+          <button class="img-btn" aria-label="Abrir imagen 3">
+            <img src="img/house3.jpeg" alt="Villa Urbana">
+          </button>
+          <h3>Villa Urbana</h3>
+          <p class="price">230.000€</p>
+          <p class="description">Nueva villa disponible en Jinamar, con piscina y jardín.</p>
+        </article>
+
+
+        <article class="house-card">
+          <button class="img-btn" aria-label="Abrir imagen 4">
+            <img src="img/house4.JPG" alt="Apartamento Lopyz">
+          </button>
+          <h3>Apartamento Lopyz</h3>
+          <p class="price">120.000€</p>
+          <p class="description">Nuevo apartamento con piscina comunitaria, terraza y zona de barbacoa.</p>
+        </article>
+
+
+        <article class="house-card">
+          <button class="img-btn" aria-label="Abrir imagen 5">
+            <img src="img/house5.JPG" alt="Villa Privada">
+          </button>
+          <h3>Villa Privada</h3>
+          <p class="price">1.240.000€</p>
+          <p class="description">Villa exclusiva con piscina privada, sauna y gimnasio privado.</p>
+        </article>
+
+
+        <article class="house-card">
+          <button class="img-btn" aria-label="Abrir imagen 6">
+            <img src="img/house6.JPG" alt="Apartamento de lujo">
+          </button>
+          <h3>Apartamento de lujo</h3>
+          <p class="price">260.000€</p>
+          <p class="description">Apartamento de lujo en Vegueta con piscina.</p>
+        </article>
+
+
+        <article class="house-card">
+          <button class="img-btn" aria-label="Abrir imagen 7">
+            <img src="img/house7.jpeg" alt="Pisos Plesur">
+          </button>
+          <h3>Pisos Plesur</h3>
+          <p class="price">123.000€</p>
+          <p class="description">Piso céntrico.</p>
+        </article>
+
+
+        <article class="house-card">
+          <button class="img-btn" aria-label="Abrir imagen 8">
+            <img src="img/house8.jpeg" alt="Casa Terrera">
+          </button>
+          <h3>Casa Terrera</h3>
+          <p class="price">150.000€</p>
+          <p class="description">Casa terrera de 3 plantas, con garaje para 4 vehículos.</p>
+        </article>
+
+
+        <article class="house-card">
+          <button class="img-btn" aria-label="Abrir imagen 9">
+            <img src="img/house9.jpeg" alt="Apartamento Teruso">
+          </button>
+          <h3>Apartamento Teruso</h3>
+          <p class="price">158.000€</p>
+          <p class="description">Apartamento en Puerto Rico, con 2 plantas y una piscina pública.</p>
+        </article>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Visor de imágenes">
+      <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+      <button class="lightbox-prev" aria-label="Imagen anterior">&#10094;</button>
+      <div class="lightbox-content">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Imagen ampliada">
+      </div>
+      <button class="lightbox-next" aria-label="Siguiente imagen">&#10095;</button>
+    </div>
+
+    <section id="contacts">
+      <h2>Contacto</h2>
+      <form id="form-contacts">
+        <input id="name" placeholder="Name" required>
+        <input id="email" placeholder="Email" required>
+        <input id="phone" placeholder="Phone" required>
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button id="btn-mail" type="submit">Enviar</button>
+      </form>
+      <p id="errors" style="color: red; margin-top: 10px;"></p>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; CasaSell. Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

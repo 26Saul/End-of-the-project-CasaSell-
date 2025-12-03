@@ -1,0 +1,115 @@
+main {
+
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #4b2e1e;
+  margin-bottom: 30px;
+}
+
+#contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-card {
+    background: #fff7f0;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.contact-card:nth-child(1) { animation-delay: 0.1s; }
+.contact-card:nth-child(2) { animation-delay: 0.2s; }
+.contact-card:nth-child(3) { animation-delay: 0.3s; }
+.contact-card:nth-child(4) { animation-delay: 0.4s; }
+
+.contact-card h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.contact-card p {
+  margin: 3px 0;
+  color: #555;
+}
+
+.contact-card .email {
+  font-weight: bold;
+}
+
+.contact-card.new {
+  border: 2px solid #ff7a00;
+  background-color: #fff0e0;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgb(238, 161, 106);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+.btn-return {
+  background: #cecbcb;
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: #000000;
+  font-weight: 700;
+  border: 2px solid #ff7300;
+  text-decoration: none;
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.btn-return:hover {
+  background: #ffffff;
+  transform: translateY(-3px) scale(1.03); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 600px) {
+  ul#contact-list li {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  ul#contact-list li {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  ul#contact-list li {
+    font-size: 18px;
+  }
+}

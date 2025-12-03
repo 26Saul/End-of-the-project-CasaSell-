@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gestionar Casas — CasaSell</title>
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+    <header class="header-management">
+        <nav class="nav-management">
+        <div class="logo-management">CasaSell — Gestión</div>
+
+        <a href="/index.html" class="return-btn">◀ Volver al listado</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="title">Añadir casa</h1>
+
+
+        <form id="manage-form">
+            <input type="hidden" id="prod-id">
+
+
+            <label>
+                Nombre
+                <input id="prod-name-input" type="text" placeholder="Nombre de la casa" required>
+            </label>
+
+
+            <label>
+                Precio (€)
+                <input id="prod-price-input" type="number" min="0" step="0.01" placeholder="0.00">
+            </label>
+
+
+            <label>
+                Categoría
+                <input id="prod-cat-input" type="text" placeholder="Ej: Villa, Apartamento...">
+            </label>
+
+
+            <label>
+                Descripción
+                <textarea id="prod-desc-input" rows="4" placeholder="Descripción"></textarea>
+            </label>
+
+
+            <label>
+                Imagen
+                <input id="prod-img-input" type="file" accept="image/*">
+            </label>
+
+
+            <div class="button-house">
+                <button type="button" id="btn-cancel">Cancelar</button>
+                <button type="submit" id="btn-save">Guardar</button>
+            </div>
+
+
+            <div id="manage-feedback"></div>
+        </form>
+
+
+        <h2 id="title2">Listado actual</h2>
+        <ul id="product-list" class="crud-list"></ul>
+        
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
+
+
+
