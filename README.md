@@ -1,6 +1,3 @@
-# End-of-the-project-CasaSell-
-
-
 # "CasaSell"
 
 ## Project Title
